@@ -1,0 +1,464 @@
+/*-------------General--------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #172a43;
+}
+/*--------GRID--------------------*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header"
+        "main main main main main"
+        "section section section section section"
+        "footer footer footer footer footer";
+}
+.header { grid-area: header; }
+.main { grid-area: main; }
+.section { grid-area: section; }
+.footer { grid-area: footer; }
+
+
+/*-------------HOME--------------*/
+/*-------------Header--------------*/
+header{
+    background-color: #172a43;
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    margin: 2rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+.nav li{
+    display: inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+.nav a{
+    color:#fff954;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+a:hover {
+    color:#fff;
+    background-color: grey;
+    border-radius: 1rem;
+    box-shadow: #fff954 0px 0px 10px;
+}
+.banner{
+    display: block;
+    margin: auto;
+    width: 100vw;
+    overflow: visible;
+}
+
+/*-------------Main--------------*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #172a43;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.main_ultimoPodcast{
+    background-color: #F0A018;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50rem;
+    height: 17rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: #fff954 0px 0px 10px;
+}
+.main_ultimoPodcast--info{
+    background-color: #F0A018;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 13.8rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.main_ultimoPodcast--portada1{
+    width: 13.8rem;
+    height: 13.8rem;
+    border-radius: 1rem;
+    background-image: url(https://dummyimage.com/138x138/000/fff);
+}
+.main_ultimoPodcast--info span{
+    background-color: #F0A018;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    width: 16rem;
+}
+.main_ultimoPodcast--playButtonBox{
+    background-color: #F0A018;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_ultimoPodcast--playButton{
+    background-color: #F0A018;
+    width: 6.4rem;
+    pointer-events: none;
+}
+
+/*-------------Section--------------*/
+.section_title{
+    background-color: #172a43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_title h1{
+    background-color: #172a43;
+    color:#fff954;
+    padding: 3rem 0rem 0rem 1rem;
+    font-size: 2.5rem;
+}
+.section_title h2{
+    background-color: #172a43;
+    color:#fff;
+    padding: 0.5rem 0rem 1rem 1rem;
+    font-size: 1.6rem;
+}
+.section_portadas{
+    background-color: #172a43;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.section_portadas--podcastPortada{
+    background-color: #F0A018;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: #fff 0px 0px 10px;
+    width: 16rem;
+    height: 16rem;
+}
+.section_ultimoPodcast--portadas{
+    width: 13.8rem;
+    height: 13.8rem;
+    background-image: url(https://dummyimage.com/138x138/000/fff);
+}
+.section_portadas--podcastPortada span,a{
+    color:#fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/*-------------Footer--------------*/
+.footer{
+    background-color: #172a43;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_contenedor{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_contenedor--title{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    align-items: baseline;
+}
+.footer_contenedor--iconos{
+    display: flex;
+    width: 10rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.icono_github{
+    background-image: url(../images/github.png);
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+}
+.icono_linkedin{
+    background-image: url(../images/linkedin.png);
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+.footer_contenedor div a img{
+    width: 3rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
+.footer_contenedor div a img:hover{
+    opacity: 0.5;
+}
+
+/*----------COMO ESCUCHARNOS----------*/
+/*-------------Main--------------*/
+.main_title h1{
+    color:#fff954;
+    padding: 3rem 0rem 0rem 1rem;
+    font-size: 2.5rem;
+}
+.main_title h2{
+    background-color: #172a43;
+    color:#fff;
+    padding: 0.5rem 0rem 1rem 1rem;
+    font-size: 1.6rem;
+}
+.main_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 2rem;
+}
+
+/*-------------BLOG--------------*/
+/*-------------Main--------------*/
+.header{
+    height: fit-content;
+}
+.main_title--article{
+    border: #F0A018 solid 1px;
+    margin: 0.5rem;
+}
+.main_title--article h2{
+    color: #fff954;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+}
+.main_title--article span{
+    color: #fff;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+}
+.main_title--article p{
+    color: #fff;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+/*----------OTROS PODCAST---------*/
+/*-------------Main--------------*/
+.main_title h1{
+    padding: 3rem 0rem 0rem 1rem;
+}
+.main_title h2{
+    padding: 0.5rem 0rem 1rem 1rem;
+}
+
+.main_portadas{
+    background-color: #172a43;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.main_portadas--podcastPortada{
+    background-color: #F0A018;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: #fff 0px 0px 10px;
+}
+.main_portadas--podcastPortada span{
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+.main_portadas--podcastPortada p{
+    color:#fff;
+    font-size: 1.3rem;
+}
+
+/*-----------CONTACTO------------*/
+/*-------------Main--------------*/
+.main_title{
+    text-align: center;
+}
+.main_subtitle{
+    color: #fff954;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+}
+.main_form{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+    padding: 0rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_form label{
+    margin: 0.5rem;
+}
+.main_form--buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+    justify-content: center;
+}
+
+/*-----------EN CONSTRUCCIÓN------------*/
+/*-------------Main--------------*/
+.main_title--alternative h1{
+    background-color: #172a43;
+    color:#fff954;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    font-size: 2.5rem;
+}
+
+/*-----------MEDIA QUERYS------------*/
+/*si como min es de 1600px seccion BLOG*/
+@media (min-width: 250px) and (max-width: 1600px){
+    #container--blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "footer footer footer footer footer";
+    }
+    .nav { grid-area: header; }
+    .main { grid-area: main; }
+    .footer { grid-area: footer; }
+}
+
+/*si como max es de 1260px*/
+@media (max-width: 1260px) {
+/*HOME*/
+    .section_title h1{
+        font-size: 1.8rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 0.5fr 1fr auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "section section section section section"
+            "footer footer footer footer footer";
+    }
+    .header { grid-area: header; }
+    .main { grid-area: main; }
+    .section { grid-area: section; }
+    .footer { grid-area: footer; }
+/*COMO ESCUCHARNOS*/
+    .main_title h1{
+        color:#fff954;
+        font-size: 2.5rem;
+    }
+}
+
+
+/*Si como max es de 526px*/
+@media (max-width: 526px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr auto 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "section section section section section"
+            "footer footer footer footer footer";
+    }
+    .header { grid-area: header; }
+    .main { grid-area: main; }
+    .section { grid-area: section; }
+    .footer { grid-area: footer; }
+
+    /*HOME*/
+    .nav a{
+        font-size: 1.1rem;
+    }    
+    .main_ultimoPodcast{
+		width: 300px;
+		height: 100px;
+    }
+    .main_ultimoPodcast--portada1{
+        width: 80px;
+        height: 80px;
+    }
+    .main_ultimoPodcast--info{
+		width: 10px;
+		height: 80px;
+    }
+    .main_ultimoPodcast--info span{
+		font-size: 0.9rem;
+    }
+    .main_ultimoPodcast--playButtonBox{
+        width: 80px;
+        height: 80px;
+    }
+    .main_ultimoPodcast--playButton{
+        width: 50px;
+        height: 50px;
+    }
+/*COMO ESCUCHARNOS*/
+.main_title h1{
+    color:#fff954;
+    font-size: 2.5rem;
+    }
+}
