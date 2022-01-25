@@ -1,0 +1,44 @@
+*{
+    background-color: #172a43;
+    color: #fff;
+}
+/*Header*/
+#personal-color--nav>a{
+    color: #fff954;
+}
+/*Main*/
+.personal-background--orange{
+    background-color: #F0A018;
+}
+.personal-portada1--size{
+    width: 500px;
+    height: 170px;
+}
+.personal-portadas--size{
+    width: 138px;
+    height: 138px;
+}
+.personal-texto--size{
+    height: 138px;
+}
+
+/*Section*/
+h1{
+    color: #fff954;
+}
+.personal-podcast-portada--size{
+    width: 160px;
+    height: 170px;
+    background-color: #F0A018;
+    box-shadow: #fff 0px 0px 10px;
+}
+.personal-texto--portada{
+    background-color: #F0A018;
+    font-size: 13px;
+    color: #fff;
+}
+
+/*Footer*/
+.personal-icon--size{
+    height: 30px;
+}

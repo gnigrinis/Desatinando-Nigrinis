@@ -4,80 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <!-- Estilo CSS propio -->
+    <link rel="stylesheet" type="text/css" href="css/styleBootstrap.css"/>
+    <!-- Estilo CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Desatinando Opinión Sin Censura</title>
 </head>
 <body class="container">
-    <header class="header">
-        <nav class="nav">
-            <ul>
-                <li><a href="pages/comoEscucharnos.html">CÓMO ESCUCHARNOS</a></li>
-                <li><a href="pages/blog.html">BLOG</a></li>
-                <li><a href="pages/otrosPodcast.html">OTROS PODCAST</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <a href="index.html"><img src="images/banner.gif" alt="Banner de Desatinando" class="banner"></a>
-    </header>
-    <main class="main">
-        <section class="main_ultimoPodcast">    
-            <div class="main_ultimoPodcast--portada1"></div>
-            <div class="main_ultimoPodcast--info">
-                <span>T1E10 - Lorem Ipsum</span>
-                <span>01 DICIEMBRE, 2021</span>
+    <header class="d-flex flex-column">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid" id="personal-color--nav">
+                <a class="navbar-brand" href="#">MENÚ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="personal-color--nav">
+                        <a class="nav-link" href="#">Cómo Escucharnos</a>
+                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">Otros Podcasts</a>
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </div>
+                </div>
             </div>
-            <div class="main_ultimoPodcast--playButtonBox">
-                <a href="pages/comoEscucharnos.html"><img src="images/playButton.png" alt="Botón de Play" class="main_ultimoPodcast--playButton"></a>
+        </nav>
+        <a class="row" href="index.html"><img src="images/banner.gif" class="img-fluid" alt="Banner de Desatinando"></a>
+    </header>
+    <main class="row">
+        <section class="m-2 d-flex justify-content-center">
+            <div class="d-flex justify-content-around align-items-center personal-portada1--size personal-background--orange rounded-3">    
+                <img class="personal-portadas--size rounded-3" src="https://dummyimage.com/138x138/000/fff" alt="Portada de ultimo capitulo del podcast.">
+                <div class="d-flex flex-column justify-content-between m-1 personal-background--orange personal-texto--size">
+                    <span class="personal-background--orange">T1E10 - Lorem Ipsum</span>
+                    <span class="personal-background--orange">01 DICIEMBRE, 2021</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center personal-background--orange">
+                    <a href="pages/comoEscucharnos.html"><img class="personal-background--orange" src="images/playButton.png" alt="Botón de Play"></a>
+                </div>
             </div>
         </section>  
     </main>
-    <section class="section">
-        <div class="section_title">
-            <h1>DESATINANDO: OPINIÓN SIN CENSURA</h1>
-            <h2>LO MÁS RECIENTE DEL PODCAST</h2>
+    <section class="row">
+        <div class="row m-4">
+            <h1 class="text-center">DESATINANDO: OPINIÓN SIN CENSURA</h1>
+            <h2 class="text-center">LO MÁS RECIENTE DEL PODCAST</h2>
         </div>
-        <section class="section_portadas">
-            <div class="section_portadas--podcastPortada">
-                <div class="section_ultimoPodcast--portadas"></div>
-                <a href="pages/comoEscucharnos.html"><span>T1E09 - Lorem Ipsum</span></a>
-            </div>
+        <section class="d-flex flex-row justify-content-evenly flex-wrap m-1">
             <div>
-                <div class="section_portadas--podcastPortada">
-                    <div class="section_ultimoPodcast--portadas"></div>
-                    <a href="pages/comoEscucharnos.html"><span>T1E08 - Lorem Ipsum</span></a>
+                <div class="personal-podcast-portada--size d-flex flex-column align-items-center m-1 p-2 rounded-3">
+                    <img class="row rounded-3 personal-portadas--size" src="https://dummyimage.com/138x138/000/fff" alt="Portada de capitulo ocho del podcast.">
+                    <a class="row text-decoration-none" href="pages/comoEscucharnos.html"><span class="personal-texto--portada">T1E09 - Lorem Ipsum</span></a>
                 </div>
             </div>
             <div>
-                <div class="section_portadas--podcastPortada">
-                    <div class="section_ultimoPodcast--portadas"></div>
-                    <a href="pages/comoEscucharnos.html"><span>T1E07 - Lorem Ipsum</span></a>
+                <div class="personal-podcast-portada--size d-flex flex-column align-items-center m-1 p-2 rounded-3">
+                    <img class="row rounded-3" src="https://dummyimage.com/138x138/000/fff" alt="Portada de capitulo ocho del podcast.">
+                    <a class="row text-decoration-none" href="pages/comoEscucharnos.html"><span class="personal-texto--portada">T1E08 - Lorem Ipsum</span></a>
                 </div>
             </div>
             <div>
-                <div class="section_portadas--podcastPortada">
-                    <div class="section_ultimoPodcast--portadas"></div>
-                    <a href="pages/comoEscucharnos.html"><span>T1E06 - Lorem Ipsum</span></a>
+                <div class="personal-podcast-portada--size d-flex flex-column align-items-center m-1 p-2 rounded-3">
+                    <img class="rounded-3" src="https://dummyimage.com/138x138/000/fff" alt="Portada de capitulo siete del podcast.">
+                    <a class="row text-decoration-none" href="pages/comoEscucharnos.html"><span class="personal-texto--portada">T1E07 - Lorem Ipsum</span></a>
                 </div>
             </div>
             <div>
-                <div class="section_portadas--podcastPortada">
-                    <div class="section_ultimoPodcast--portadas"></div>
-                    <a href="pages/comoEscucharnos.html"><span>T1E06 - Lorem Ipsum</span></a>
+                <div class="personal-podcast-portada--size d-flex flex-column align-items-center m-1 p-2 rounded-3">
+                    <img class="rounded-3" src="https://dummyimage.com/138x138/000/fff" alt="Portada de capitulo seis del podcast.">
+                    <a class="row text-decoration-none" href="pages/comoEscucharnos.html"><span class="personal-texto--portada">T1E06 - Lorem Ipsum</span></a>
+                </div>
+            </div>
+            <div>
+                <div class="personal-podcast-portada--size d-flex flex-column align-items-center m-1 p-2 rounded-3">
+                    <img class="rounded-3" src="https://dummyimage.com/138x138/000/fff" alt="Portada de capitulo cinco del podcast.">
+                    <a class="row text-decoration-none" href="pages/comoEscucharnos.html"><span class="personal-texto--portada">T1E05 - Lorem Ipsum</span></a>
                 </div>
             </div>
         </section>
     </section>  
-    <footer class="footer">
-        <div class="footer_contenedor">
-            <p class="footer_contenedor--title">Acerca del creador</p>
-            <div class="footer_contenedor--iconos">
-                <a href="https://github.com/gnigrinis"><div class="icono_github"></div></a>
-                <a href="https://www.linkedin.com/in/giancarlonigrinis/"><div class="icono_linkedin"></div></a>           
+    <footer class="row text-center">
+        <div class="col">
+            <p class="row justify-content-center">Acerca del creador</p>
+            <div class="d-flex flex-row justify-content-center">
+                <a href="https://github.com/gnigrinis"><img class="personal-icon--size m-1" src="images/github.png" alt="icono de github"></a>
+                <a href="https://www.linkedin.com/in/giancarlonigrinis/"><img class="personal-icon--size m-1" src="images/linkedin.png" alt="icono de linkedin"></a>           
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
