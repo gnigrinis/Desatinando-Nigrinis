@@ -416,7 +416,7 @@ nav ul{
     .section_title h1{
         font-size: 1.8rem;
     }
-    .container {
+oots    .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 1fr;
