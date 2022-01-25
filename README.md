@@ -8,6 +8,7 @@ This page to be an example of using HTML to structure a page.
 - CSS 3
 - GRID
 - Flexbox
+- Bootstrap 5.1
 
 
 ### About creator
